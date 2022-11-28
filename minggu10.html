@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+		<head>
+            <title>Belajar Java script </title>
+            <script>
+              function hitung(){
+                  var form = document.formHitung
+                  var x = eval (form.bil1.value);
+                  var y = eval (form.bil2.value);
+                  var pil = form.opr.value;
+                  if(pil=="+"){
+                    var z=x+y;
+                }else if(pil=="-"){
+                    var z=x+y;
+                }else  if(pil=="*"){
+                    var z=x+y;
+                }else  if(pil=="/"){
+                    var z=x+y;
+                }else  
+
+                  form.hasil.value= z; 
+              }  
+            
+            </script>
+		</head>
+	<body>
+    <h1>BELAJAR jAVA Script</h1>
+        <from name="fromHitung" action="#">
+            bil 1 <input type="number" name="bil1"><br>
+            opr
+            <select name="opr">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>   
+            </select><hr>
+            bil 2 <input type="number" name="bil2"><br>
+            <input type="button" value="=" onclick="hitung()">
+            <input type="number" name="hasil" disabled>
+        </from>    
+	</body>
+</html>
